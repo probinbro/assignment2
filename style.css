@@ -11,6 +11,7 @@ body {
   padding: 10px;
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  max-width: 1920px;
 }
 
 .nav-logo-container {
@@ -90,25 +91,73 @@ body {
   background-color: red;
 }
 
-/* Media Query for Mobile Devices */
-@media screen and (max-width: 425px) {
-  .navbar {
-    flex-direction: column;
-  }
 
-  .nav-logo-container {
-    display: center;
-  }
+/* Banner 1 */
 
-  .nav-item-container {
-    flex-direction: column;
-  }
-
-  .links {
-    flex: 1 100%;
-  }
-
-  .nav-button-container {
-    flex: 1 100%;
-  }
+.banner-1 {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+border: 5px solid red;
+margin: 50px,auto;
+max-width: 1920px;
+background-image: url(/B8A2-Gamer-Zone/images/Group\ 14.png);
+background-repeat: no-repeat;
 }
+.banner-text {
+width: 50%;
+text-align: center;
+
+
+}
+.banner-text h3 {
+    color: #0B0223;
+font-family: Work Sans;
+font-size: 48px;
+font-weight: 600;
+margin: 5px;
+
+}
+.banner-text h1 {
+font-family: Work Sans;
+font-size: 95px;
+font-weight: 800;
+margin: 5px;
+text-transform: uppercase;
+}
+.gradient-text{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.banner-text p{
+    margin: 5px;
+    color: #534C64;
+font-family: Work Sans;
+font-size: 20px;
+font-weight: 500;
+
+}
+.button-style {
+    display: inline-flex;
+    border: none;
+padding: 21px 40px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 48px;
+background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+color: #FFF;
+font-family: Work Sans;
+font-size: 20px;
+font-weight: 600;
+}
+.button-2 {
+background: #4EC5F7;
+}
+/* .banner-1, .banner-image img { 
+ padding: 15px;
+ width: 100%;
+} */
+

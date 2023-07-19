@@ -1,0 +1,25 @@
+/* Media Query for Mobile Devices */
+
+
+@media screen and (max-width: 425px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .nav-logo-container {
+      display: center;
+    }
+  
+    .nav-item-container {
+      flex-direction: column;
+    }
+  
+    .links {
+      flex: 1 100%;
+    }
+  
+    .nav-button-container {
+      flex: 1 100%;
+    }
+  }
+  
