@@ -9,145 +9,114 @@ body {
   font-family: "Work Sans", sans-serif;
   max-width: 1320px;;
 }
+.width-controller {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.decorated-letter {
+  color: #ff42a5;
+}
+.gradient-text{
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 
+}
 /* Header Section */
 
 header {
   padding: 30px 0px;
   box-shadow: 0px 0px 5px #f948b23b;
 }
-.navbar {
+header nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  background: #fff;
 }
-
-.nav-logo-container {
+.logo {
   display: flex;
   align-items: center;
 }
-
-.logo-text {
-  text-align: center;
+ .logo h1 {
   font-size: 45px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  padding-left: 20px;
 }
-.logo-image {
-  width: 86.041px;
-  height: 40px;
-  flex-shrink: 0;
-}
-.decorated-letter {
-  color: #ff42a5;
-}
-.nav-item-container {
+header nav ul {
   display: flex;
   align-items: center;
-
 }
-
-/* .links {
-    display: flex;
-    align-items: center;
-  } */
-
-/* .links a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-  } */
-.nav-item-container a {
+header nav ul li {
+  list-style: none;
+}
+header nav ul a {
+  margin: 20px 20px;
   text-decoration: none;
-  margin-right: 20px;
-  color: #3c354f;
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  color: #000000;
 }
-/* .button {
+.nav-follow-section {
   display: flex;
   align-items: center;
-} */
-
-/* .nav-button-container img {
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
-} */
-.nav-button-container{
-    color: #3c354f;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+  gap: 15px;
+  background-color: #e7e6e9;
+  padding: 10px 20px 10px 0;
+  border-radius: 5px;
 }
-
-.nav-button-container button {
-  background-color: #fff;
-  border: none;
-  padding: 8px 15px;
-  cursor: pointer;
-  border-radius: 8px;
-  background: rgba(11, 2, 35, 0.10);
-}
+/* 
 .fa-brands {
-  background-color: red;
+ font-size: 28px;
 }
+.fa-youtube{
+  color: red;
+}
+.fa-tiktok{
+  color: #000000;
+} */
 
 
 /* Banner 1 */
 
-.banner-1 {
- display: flex;
- justify-content: space-between;
- align-items: center;
-border: 5px solid red;
-margin: 50px,auto;
-max-width: 1920px;
-background-image: url(/B8A2-Gamer-Zone/images/Group\ 14.png);
-background-repeat: no-repeat;
-}
-.banner-text {
-width: 50%;
-text-align: center;
 
-
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.banner-text h3 {
-    color: #0B0223;
-font-family: Work Sans;
-font-size: 48px;
-font-weight: 600;
-margin: 5px;
+.banner {
+  background-image: url("./B8A2-Gamer-Zone/images/group14.png");
+  background-position: start;
+  background-repeat: no-repeat;
+}
+ .banner-text h2 {
+  font-size: 40px;
+  font-weight: 700;
 
 }
-.banner-text h1 {
-font-family: Work Sans;
-font-size: 95px;
-font-weight: 800;
-margin: 5px;
-text-transform: uppercase;
+.banner-container .banner-text h1 {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 800;
 }
-.gradient-text{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.banner-container .banner-button {
+  padding-top: 25px;
+}
+.banner-container .banner-text p {
+  margin: 5px 0px;
+}
+.banner-container .banner-button button:nth-child(2) {
+  margin-left: 15px;
+}
+.banner-container .banner-text i {
+  color: #f948b2;
+}
+.banner-container .banner-text .download-icon i {
+  transform: rotate(90deg);
+}
+.banner-container .banner-img img {
+  padding-top: 25px;
+  width: 100%;
+}
 
-}
-.banner-text p{
-    margin: 5px;
-    color: #534C64;
-font-family: Work Sans;
-font-size: 20px;
-font-weight: 500;
-
-}
 .button-style {
     display: inline-flex;
     border: none;
@@ -207,6 +176,11 @@ justify-items: center;
 }
 .play .play-text p {
   padding: 20px 0;
+  
+}
+.play h1{
+  font-size: 40px;
+  font-weight: 700;
 }
 .play .play-img-2 {
   margin-top: -280px;
