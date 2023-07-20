@@ -1,6 +1,6 @@
 /* Media Query for Mobile Devices */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 576px) {
   header nav {
     flex-direction: column;
 }
@@ -27,6 +27,7 @@ header nav ul li {
 }
 .banner-img {
     order: 1;
+    width: auto;
 }
 
   /* Banner */
@@ -47,11 +48,22 @@ header nav ul li {
 .banner-img {
     order: 1;
 }
+
     /* Video */
-    .video-container{
-        grid-template-columns: repeat(1,1fr);
-    }
-    
+    .video-containers {
+      padding: 40px 25px;
+  }
+  .video-containers .videos {
+      grid-template-columns: repeat(1, 1fr);
+      align-items: center;
+      padding: 25px;
+  }
+  .video-containers .videos p {
+      text-align: center;
+  }
+
+
+  /* 
     /* play section */
 .play{
     flex-direction: column;

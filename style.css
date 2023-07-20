@@ -7,13 +7,9 @@
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
-  max-width: 1320px;;
+  /* max-width: 1320px;; */
 }
-.width-controller {
-  max-width: 1320px;
-  margin: 0 auto;
-}
-.decorated-letter {
+corated-letter {
   color: #ff42a5;
 }
 .gradient-text{
@@ -139,29 +135,56 @@ background: #4EC5F7;
 } */
 
 /* video section */
-.video-section{
-    width: 100%;
-    border: 5px solid black;
-    max-width: 1920px;
+.video-containers {
+  text-align: center;
+  padding: 50px 0;
 }
-.video-section h2 {
-    color: #0B0223;
-text-align: center;
-font-size: 48px;
-font-weight: 700;
+.video-containers .videos-text {
+  padding-bottom: 45px;
 }
-.video-container{
-display: grid;
-grid-template-columns: repeat(4,1fr);
-justify-items: center;
+.video-containers .videos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  gap: 15px;
+  justify-content: space-between;
 }
-.video p{
-    color: #534C64;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px; /* 150% */
-}
+.section-title{
+  font-size: 40px;
+  font-weight: 700;
 
+}
+.video-containers .videos p {
+  padding: 15px 0px 15px 5px;
+  text-align: left;
+}
+.video-containers .videos .video img {
+  border-radius: 16px;
+  width: 100%;
+}
+.video-containers .videos .video {
+  position: relative;
+}
+.video-containers .videos .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 83%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid #f948b2;
+  color: #ffffff;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.video-containers .videos .video .overlay:hover {
+  opacity: 1;
+}
 /* Play section */
 
 .play {
@@ -185,4 +208,29 @@ justify-items: center;
 .play .play-img-2 {
   margin-top: -280px;
   margin-left: -130px;
+}
+/* games */
+.games-container {
+  padding: 60px 0;
+}
+.games-container .games {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.games-container .games .game {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 15px;
+  margin: 20px;
+  border: 1px solid #ffffff;
+}
+.games-container .games .game:hover {
+  border: 1px solid #f948b2;
+  border-radius: 50px;
+  color: #f948b2;
+  cursor: pointer;
 }
