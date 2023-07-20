@@ -7,9 +7,9 @@
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
-  /* max-width: 1320px;; */
+ width: auto;
 }
-corated-letter {
+.decorated-letter {
   color: #ff42a5;
 }
 .gradient-text{
@@ -23,7 +23,8 @@ background-clip: text;
 
 header {
   padding: 30px 0px;
-  box-shadow: 0px 0px 5px #f948b23b;
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 header nav {
   display: flex;
