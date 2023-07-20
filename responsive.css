@@ -1,7 +1,6 @@
 /* Media Query for Mobile Devices */
 
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 800px) {
     .navbar {
       flex-direction: column;
     }
@@ -21,5 +20,29 @@
     .nav-button-container {
       flex: 1 100%;
     }
+
+  /* Banner */
+  .banner-1{
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-text {
+    flex: 1 100%;
+    order: 2;
+    max-width: fit-content;
+  }
+.banner-image {
+    flex: 1 100%;
+    order: 1;
+    max-width: fit-content;
+}
+
+    /* Video */
+    .video-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
   }
   
